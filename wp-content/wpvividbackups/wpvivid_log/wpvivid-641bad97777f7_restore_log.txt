@@ -1,0 +1,96 @@
+[2023-03-22 22:38:31][notice]Start restoring themes.
+[2023-03-22 22:38:31][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:32][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip succeeded.
+[2023-03-22 22:38:32][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_themes.zip index:0
+[2023-03-22 22:38:32][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_themes.zip index:0 finished.
+[2023-03-22 22:38:32][notice]End restore themes.
+[2023-03-22 22:38:33][notice]Start restoring plugin.
+[2023-03-22 22:38:33][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:33][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip succeeded.
+[2023-03-22 22:38:33][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_plugin.zip index:0
+[2023-03-22 22:38:33][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_plugin.zip index:0 finished.
+[2023-03-22 22:38:33][notice]End restore plugin.
+[2023-03-22 22:38:35][notice]Start restoring wp-content.
+[2023-03-22 22:38:35][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:35][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip succeeded.
+[2023-03-22 22:38:35][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_content.zip index:0
+[2023-03-22 22:38:35][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_content.zip index:0 finished.
+[2023-03-22 22:38:35][notice]End restore wp-content.
+[2023-03-22 22:38:36][notice]Start restoring upload.
+[2023-03-22 22:38:36][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:36][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip succeeded.
+[2023-03-22 22:38:36][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_uploads.zip index:0
+[2023-03-22 22:38:36][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_uploads.zip index:0 finished.
+[2023-03-22 22:38:36][notice]End restore upload.
+[2023-03-22 22:38:38][notice]Start restoring wp-core.
+[2023-03-22 22:38:38][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:38][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip succeeded.
+[2023-03-22 22:38:38][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_core.zip
+[2023-03-22 22:38:40][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_core.zip succeeded.
+[2023-03-22 22:38:40][notice]End restore wp-core.
+[2023-03-22 22:38:42][notice]Start restoring databases.
+[2023-03-22 22:38:42][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip
+[2023-03-22 22:38:42][notice]Extracting file:localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_all.zip finished.
+[2023-03-22 22:38:42][notice]Extracting file:C:\xampp\htdocs\wp_etecidos/wp-content\wpvividbackups\localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_db.zip
+[2023-03-22 22:38:42][notice]Extracting file:C:\xampp\htdocs\wp_etecidos/wp-content\wpvividbackups\localhost_wp_etecidos_wpvivid-641b4aa66c7af_2023-03-22-15-36_backup_db.zip finished.
+[2023-03-22 22:38:42][notice]End restore databases.
+[2023-03-22 22:38:44][notice]Start restoring databases.
+[2023-03-22 22:38:44][notice]Start restoring sql file offset:0
+[2023-03-22 22:38:44][notice]The test to drop table succeeds.
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_links
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_links
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_term_relationships
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_term_relationships
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_commentmeta
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_commentmeta
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_postmeta
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_postmeta
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_term_taxonomy
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_term_taxonomy
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_termmeta
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_termmeta
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_terms
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_terms
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_usermeta
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_usermeta
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_users
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_users
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_comments
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_comments
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_posts
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_posts
+[2023-03-22 22:38:44][notice]Drop table if exist tmpe9c67f_options
+[2023-03-22 22:38:44][notice]Creating table tmpe9c67f_options
+[2023-03-22 22:38:44][notice]UPDATE tmpe9c67f_options SET option_value="http://localhost/wp_etecidos" WHERE option_name="siteurl";
+[2023-03-22 22:38:44][notice]update query len:101
+[2023-03-22 22:38:44][notice]UPDATE tmpe9c67f_options SET option_value="http://localhost/wp_etecidos" WHERE option_name="home";
+[2023-03-22 22:38:44][notice]update query len:98
+[2023-03-22 22:38:44][notice]Restore db success
+[2023-03-22 22:38:44][notice]End restore databases.
+[2023-03-22 22:38:45][notice]Restore db success,now start rename temp table name prefix to new site prefix.
+[2023-03-22 22:38:45][notice]DROP TABLE IF EXISTS wp_commentmeta
+[2023-03-22 22:38:45][notice]DROP TABLE IF EXISTS wp_comments
+[2023-03-22 22:38:45][notice]DROP TABLE IF EXISTS wp_links
+[2023-03-22 22:38:45][notice]DROP TABLE IF EXISTS wp_options
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_postmeta
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_posts
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_term_relationships
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_term_taxonomy
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_termmeta
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_terms
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_usermeta
+[2023-03-22 22:38:46][notice]DROP TABLE IF EXISTS wp_users
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_commentmeta TO wp_commentmeta
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_comments TO wp_comments
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_links TO wp_links
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_options TO wp_options
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_postmeta TO wp_postmeta
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_posts TO wp_posts
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_term_relationships TO wp_term_relationships
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_term_taxonomy TO wp_term_taxonomy
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_termmeta TO wp_termmeta
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_terms TO wp_terms
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_usermeta TO wp_usermeta
+[2023-03-22 22:38:46][notice]RENAME TABLE tmpe9c67f_users TO wp_users
+[2023-03-22 22:38:46][notice]Replacing table prefix succeeded.
+[2023-03-22 22:38:46][notice]Deleting temp files.

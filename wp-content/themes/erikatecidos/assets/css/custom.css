@@ -1,0 +1,34 @@
+#header {
+    background: #37517e;
+}
+
+#header .logo {
+    background-color: #314a7463;
+}
+
+#hero .animated {
+    display: none;
+}
+
+#hero {
+    background: #37517e;
+    background-image: url(../img/sofa-banner-1200x800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.slogan {
+    background-color: #37517e;
+    padding: 2em !important;
+    background: -webkit-linear-gradient(left, #37517e, #88a2d0);
+    background: -moz-linear-gradient(left, #37517e, #88a2d0);
+    background: -ms-linear-gradient(left, #37517e, #88a2d0);
+    background: -o-linear-gradient(left, #37517e, #88a2d0);
+    background: linear-gradient(to right, #37517efa, #46629300);
+}
+
+.aos-animate {
+    /*transition: backgraound-color .2s;
+    background-color:#37517e8f*/
+}
