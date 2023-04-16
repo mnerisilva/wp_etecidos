@@ -12,7 +12,7 @@
 
 #hero {
     background: #37517e;
-    background-image: url(../img/sofa-banner-1200x800.jpg);
+    /*background-image: url(../img/sofa-banner-1200x800.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
