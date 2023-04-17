@@ -175,7 +175,7 @@
                             <p><?php the_field('quinto_paragrafo'); ?></p>
                             <p><?php the_field('sexto_paragrafo'); ?></p>
                             <?php if( get_field('adiciona_botao_de_acao_sobre') ){ ?> 
-                                <a href="<?php the_field('texto_link_do_botao_de_acao'); ?>" class="btn-learn-more"><?php the_field('texto_botao_de_acao'); ?></a>
+                                <div style="display: flex; justify-content: <?php the_field('posicao_do_botao_de_acao'); ?>;"><a href="<?php the_field('texto_link_do_botao_de_acao'); ?>" class="btn-learn-more"><?php the_field('texto_botao_de_acao'); ?></a></div>
                             <?php }; ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
@@ -857,7 +857,7 @@
 
 
 
-    
+
 
   </main><!-- End #main -->
 <?php get_footer(); ?>
