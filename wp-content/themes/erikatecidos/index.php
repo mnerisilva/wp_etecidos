@@ -61,6 +61,14 @@
 
   </section><!-- End Hero -->
 
+
+
+
+
+
+
+
+
   <main id="main">
 
     <!-- ======= Clients Section ======= -->
@@ -91,14 +99,7 @@
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="<// echo get_template_directory_uri(); ?>/assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>-->        
-
-
-
-
-
-
-
+          </div>-->  
 
           <?php
             $args = array(
@@ -128,34 +129,21 @@
         ?>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
       </div>
     </section><!-- End Cliens Section -->
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -166,29 +154,45 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
-            <p>Há mais de 20 anos, nossa empresa se dedica a oferecer tecidos de alta qualidade para decoração, cortinas e estofados. Com uma vasta experiência no ramo, estamos comprometidos em fornecer produtos de excelência para atender as necessidades de nossos clientes.</p>
 
-            <p>Ao longo dos anos, nossa empresa cresceu e se tornou referência no mercado, graças à nossa dedicação em oferecer uma ampla variedade de tecidos, com estampas e texturas exclusivas, que atendem às tendências do mercado de decoração e design.</p>
+                      
+                      <div class="col-lg-12">
+                        <?php 
+                        // args
+                        $args = array(
+                            'numberposts'   => 1,
+                            'post_type'     => 'sobrenos'
+                        );
+                        // query
+                        $the_query = new WP_Query( $args );
+                        ?>
+                        <?php if( $the_query->have_posts() ): ?>
+                            <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <p><?php the_field('primeiro_paragrafo'); ?></p>
+                            <p><?php the_field('segundo_paragrafo'); ?></p>
+                            <p><?php the_field('terceiro_paragrafo'); ?></p>
+                            <p><?php the_field('quarto_paragrafo'); ?></p>
+                            <p><?php the_field('quinto_paragrafo'); ?></p>
+                            <p><?php the_field('sexto_paragrafo'); ?></p>
+                            <?php if( get_field('adiciona_botao_de_acao_sobre') ){ ?> 
+                                <a href="<?php the_field('texto_link_do_botao_de_acao'); ?>" class="btn-learn-more"><?php the_field('texto_botao_de_acao'); ?></a>
+                            <?php }; ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                        <?php wp_reset_query();   // Restore global post data stomped by the_post(). ?>
+                    </div> 
 
-            <p>Além disso, temos um compromisso forte com a sustentabilidade e a preservação do meio ambiente. Por isso, buscamos fornecedores comprometidos esta filosofia, que produzam materiais de alta qualidade e com responsabilidade ambiental, garantindo a satisfação dos nossos clientes e a preservação do planeta.</p>
-            <!--<ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>-->
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">            
-            
-            <p>Além disso, nossa equipe é formada por profissionais altamente capacitados, que trabalham com dedicação e comprometimento para oferecer um atendimento personalizado e de excelência aos nossos clientes.</p>
-
-            <p>Se você está em busca de tecidos de qualidade para a decoração da sua casa ou para o revestimento dos seus estofados e decoração em geral, venha nos conhecer. Estamos sempre prontos para atendê-lo e ajudá-lo a encontrar a melhor solução para suas necessidades.</p>
-            <a href="#" class="btn-learn-more">Leia Mais</a>
-          </div>
         </div>
 
       </div>
     </section><!-- End About Us Section -->
+
+
+
+
+
+
+
 
     <!-- ======= Why Us Section ======= --><!--
     <section id="why-us" class="why-us section-bg">
@@ -345,6 +349,25 @@
       </div>
     </section>--><!-- End Services Section -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
@@ -361,6 +384,21 @@
 
       </div>
     </section><!-- End Cta Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -476,6 +514,23 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
@@ -560,6 +615,21 @@
       </div>
     </section><!-- End Team Section -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Pricing Section ======= -->
     <!--<section id="pricing" class="pricing">
       <div class="container" data-aos="fade-up">
@@ -620,6 +690,21 @@
 
       </div>
     </section>--><!-- End Pricing Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <!--<section id="faq" class="faq section-bg">
@@ -682,6 +767,23 @@
 
       </div>
     </section>--><!-- End Frequently Asked Questions Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -752,6 +854,10 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+
+
+    
 
   </main><!-- End #main -->
 <?php get_footer(); ?>
