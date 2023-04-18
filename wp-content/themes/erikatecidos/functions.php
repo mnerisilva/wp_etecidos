@@ -37,6 +37,9 @@ add_theme_support('post-thumbnails', array(
     'post',
     'page',
     'banner',
+	'cta',
+	'equipe_cabecalho',
+	'equipe_dados',
 ));
 
 add_theme_support('title-tag');

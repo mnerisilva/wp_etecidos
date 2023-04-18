@@ -354,6 +354,7 @@
 
 
 
+                      
 
 
 
@@ -373,14 +374,54 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
+
+
+
+
+                        <?php 
+                        // args
+                        $args = array(
+                            'numberposts'   => 1,
+                            'post_type'     => 'cta'
+                        );
+                        // query
+                        $the_query = new WP_Query( $args );
+                        ?>
+                        <?php if( $the_query->have_posts() ): ?>
+                            <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                            <?php if( get_field('com_botao_de_acao') ){ ?> 
+                                <div class="col-lg-9 text-center text-lg-start">
+                                  <h3><?php the_field('texto_destaque_da_secao_cta'); ?></h3>
+                                  <p><?php the_field('primeiro_paragrafo'); ?></p>
+                                  <p><?php the_field('segundo_paragrafo'); ?></p>
+                                  <p><?php the_field('terceiro_paragrafo'); ?></p>
+                                </div>
+                                <div class="col-lg-3 cta-btn-container text-center">
+                                  <a class="cta-btn align-middle" href="#"><?php the_field('texto_do_botao_de_acao'); ?></a>
+                                </div>
+                            <?php } else { ?>
+                                <div class="col-lg-12 text-center text-lg-start">
+                                  <h3><?php the_field('texto_destaque_da_secao_cta'); ?></h3>
+                                  <p><?php the_field('primeiro_paragrafo'); ?></p>
+                                  <p><?php the_field('segundo_paragrafo'); ?></p>
+                                  <p><?php the_field('terceiro_paragrafo'); ?></p>
+                                </div>
+                            <?php }; ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                        <?php wp_reset_query();   // Restore global post data stomped by the_post(). ?>        
+
+
+          <!--<div class="col-lg-9 text-center text-lg-start">
             <h3>Conheça nossa nova loja</h3>
             <p>Recentemente nos mudamos para um novo endereço, com amplas instalações e mais conforto para o nossos clientes. Venha nos visitar e tomar um cafezinho conosco. Você será muito bem recebido.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#">Veja Mais</a>
-          </div>
-        </div>
+          </div>-->
+
+
+        </div><!-- row -->
 
       </div>
     </section><!-- End Cta Section -->
@@ -410,7 +451,7 @@
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="" class="" style="pointer-events: none;">Formato de exibição:</li>
+          <!--<li data-filter="" class="" style="pointer-events: none;">Formato de exibição:</li>-->
           <li data-filter="*" class="filter-active">Todos</li>
           <li data-filter=".filter-app">App</li>
           <li data-filter=".filter-card">Card</li>
@@ -535,82 +576,119 @@
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title"><!-- section-title -->
           <h2>Nossa equipe</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+              <?php 
+              // args
+              $args = array(
+                  'numberposts'   => 1,
+                  'post_type'     => 'equipe_cabecalho'
+              );
+              // query
+              $the_query = new WP_Query( $args );
+              ?>
+              <?php if( $the_query->have_posts() ): ?>
+                  <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                  <p><?php the_field('primeiro_paragrafo'); ?></p>
+                  <p><?php the_field('Segundo_paragrafo'); ?></p>
+                  <p><?php the_field('Terceiro_paragrafo'); ?></p>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_query();   //$the_query->found_posts; Restore global post data stomped by the_post(). ?>  
+        </div><!-- section-title -->
 
-        <div class="row">
+        <div class="row"><!-- row -->
 
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+
+
+                
+              <?php 
+              // args
+              $args = array(
+                  'numberposts'   => -1,
+                  'post_type'     => 'equipe_dados',
+                  'orderby' => 'post_title',
+                  'order' => 'ASC'
+              );
+              // query
+              $the_query = new WP_Query( $args );
+              ?>
+              <?php if( $the_query->have_posts() ): ?>
+                  <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>  
+                      <div class="col-lg-6 mt-4 mt-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="member d-flex align-items-start">
+                          <div class="pic"><img src="<?php the_post_thumbnail_url(); ?>" class="img-fluid" alt=""></div>
+                          <div class="member-info">
+                            <h4><?php the_title(); ?></h4>
+                            <span><?php the_field('funcao_cargo'); ?></span>
+                            <p><?php the_field('breve_descricao'); ?></p>
+                            <div class="social">
+                              <a href="<?php the_field('link_da_rede_social1'); ?>"><?php the_field('icone_da_rede_social1'); ?></a>
+                              <a href="<?php the_field('link_da_rede_social2'); ?>"><?php the_field('icone_da_rede_social2'); ?></a>
+                              <a href="<?php the_field('link_da_rede_social3'); ?>"><?php the_field('icone_da_rede_social3'); ?></a>
+                              <a href="<?php the_field('link_da_rede_social4'); ?>"><?php the_field('icone_da_rede_social4'); ?></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_query();   //$the_query->found_posts; Restore global post data stomped by the_post(). ?>
+        
+        
+
+            <!--<div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="<?php //echo get_template_directory_uri(); ?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="<?php //echo get_template_directory_uri(); ?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="<?php //echo get_template_directory_uri(); ?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div>-->
 
-          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        </div><!-- row -->
 
       </div>
     </section><!-- End Team Section -->
