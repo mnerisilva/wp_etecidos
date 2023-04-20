@@ -40,6 +40,7 @@ add_theme_support('post-thumbnails', array(
 	'cta',
 	'equipe_cabecalho',
 	'equipe_dados',
+	'contato',
 ));
 
 add_theme_support('title-tag');
