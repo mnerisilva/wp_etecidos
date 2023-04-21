@@ -14,6 +14,7 @@
   <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
   
   <!-- Conteudo -->
+  <h1>posts aqui...</h1>
   <div>
     <?php the_content(); ?>
   </div>

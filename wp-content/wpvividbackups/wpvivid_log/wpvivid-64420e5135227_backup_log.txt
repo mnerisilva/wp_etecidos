@@ -1,0 +1,90 @@
+Log created: 2023-04-21 01:17:21
+Type: backup
+[2023-04-21 01:17:21][notice]Start backing up.
+[2023-04-21 01:17:21][notice]server info fcgi:Off max execution time: 300 wp version:6.2 php version:7.3.5 db version:5.5.5 php ini:safe_mode: memory_limit:256M memory_get_usage:53,58 MB memory_get_peak_usage:54,20 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2023-04-21 01:17:21][notice]Prepare to backup backup_db files.
+[2023-04-21 01:17:21][notice]Start exporting database.
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_term_relationships
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_links
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_commentmeta
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_term_taxonomy
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_termmeta
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_terms
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_usermeta
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_users
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_comments
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_postmeta
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_posts
+[2023-04-21 01:17:21][notice]Preparing to dump table wp_options
+[2023-04-21 01:17:21][notice]Exporting database finished.
+[2023-04-21 01:17:21][notice]Start compressing database
+[2023-04-21 01:17:21][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_db.sql
+[2023-04-21 01:17:21][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_db.part001.zip, filesize: 351,98 KB
+[2023-04-21 01:17:21][notice]Compressing database completed
+[2023-04-21 01:17:21][notice]Backing up backup_db completed.
+[2023-04-21 01:17:21][notice]Prepare to backup backup_themes files.
+[2023-04-21 01:17:21][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_themes.part001.zip index:500
+[2023-04-21 01:17:25][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_themes.part001.zip success. index:500 file size:77,49 MB
+[2023-04-21 01:17:25][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_themes.part001.zip index:1000
+[2023-04-21 01:17:25][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_themes.part001.zip success. index:1000 file size:77,67 MB
+[2023-04-21 01:17:25][notice]Backing up backup_themes completed.
+[2023-04-21 01:17:25][notice]Prepare to backup backup_plugin files.
+[2023-04-21 01:17:26][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_plugin.part001.zip index:500
+[2023-04-21 01:17:27][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_plugin.part001.zip success. index:500 file size:3,18 MB
+[2023-04-21 01:17:27][notice]Backing up backup_plugin completed.
+[2023-04-21 01:17:27][notice]Prepare to backup backup_uploads files.
+[2023-04-21 01:17:27][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_uploads.part001.zip index:500
+[2023-04-21 01:17:27][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_uploads.part001.zip success. index:500 file size:5,81 MB
+[2023-04-21 01:17:27][notice]Backing up backup_uploads completed.
+[2023-04-21 01:17:27][notice]Prepare to backup backup_content files.
+[2023-04-21 01:17:27][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_content.part001.zip index:500
+[2023-04-21 01:17:27][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_content.part001.zip success. index:500 file size:846,96 KB
+[2023-04-21 01:17:27][notice]Backing up backup_content completed.
+[2023-04-21 01:17:27][notice]Prepare to backup backup_core files.
+[2023-04-21 01:17:28][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:500
+[2023-04-21 01:17:28][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:500 file size:3,01 MB
+[2023-04-21 01:17:28][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:1000
+[2023-04-21 01:17:29][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:1000 file size:3,53 MB
+[2023-04-21 01:17:29][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:1500
+[2023-04-21 01:17:29][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:1500 file size:4,94 MB
+[2023-04-21 01:17:29][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:2000
+[2023-04-21 01:17:30][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:2000 file size:10,36 MB
+[2023-04-21 01:17:30][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:2500
+[2023-04-21 01:17:31][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:2500 file size:13,24 MB
+[2023-04-21 01:17:31][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip index:3000
+[2023-04-21 01:17:31][notice]Compressing zip file:localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.part001.zip success. index:3000 file size:13,49 MB
+[2023-04-21 01:17:31][notice]Backing up backup_core completed.
+[2023-04-21 01:17:31][notice]Prepare to backup backup_merge files.
+[2023-04-21 01:17:31][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_db.zip
+[2023-04-21 01:17:31][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 352,56 KB
+[2023-04-21 01:17:31][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_themes.zip
+[2023-04-21 01:17:33][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 77,89 MB
+[2023-04-21 01:17:33][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_plugin.zip
+[2023-04-21 01:17:34][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 81,00 MB
+[2023-04-21 01:17:34][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_uploads.zip
+[2023-04-21 01:17:34][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 86,79 MB
+[2023-04-21 01:17:34][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_content.zip
+[2023-04-21 01:17:34][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 87,61 MB
+[2023-04-21 01:17:34][notice]Prepare to zip file. file: localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_core.zip
+[2023-04-21 01:17:35][notice]Adding zip files completed.localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.part001.zip, filesize: 100,72 MB
+[2023-04-21 01:17:35][notice]Backing up backup_merge completed.
+[2023-04-21 01:17:35][notice]files: ["C:\/xampp\/htdocs\/wp_etecidos\/wp-content\/wpvividbackups\/localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip"]
+[2023-04-21 01:17:35][notice]Check upload folder wpvivid_backup
+[2023-04-21 01:17:36][notice]Start uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip
+[2023-04-21 01:17:36][notice]Check if the server already has the same name file.
+[2023-04-21 01:17:36][notice]Initiate a resumable upload session.
+[2023-04-21 01:17:40][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 5,00 MB speed:1310.72kb/s
+[2023-04-21 01:17:44][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 12,00 MB speed:1835.01kb/s
+[2023-04-21 01:17:48][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 19,00 MB speed:1835.01kb/s
+[2023-04-21 01:17:52][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 27,00 MB speed:2097.15kb/s
+[2023-04-21 01:17:56][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 34,00 MB speed:1835.01kb/s
+[2023-04-21 01:18:00][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 41,00 MB speed:1835.01kb/s
+[2023-04-21 01:18:04][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 49,00 MB speed:2097.15kb/s
+[2023-04-21 01:18:08][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 57,00 MB speed:2097.15kb/s
+[2023-04-21 01:18:12][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 64,00 MB speed:1835.01kb/s
+[2023-04-21 01:18:16][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 72,00 MB speed:2097.15kb/s
+[2023-04-21 01:18:20][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 79,00 MB speed:1835.01kb/s
+[2023-04-21 01:18:24][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 88,00 MB speed:2359.3kb/s
+[2023-04-21 01:18:28][notice]Uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip Total size: 100,72 MB Uploaded: 98,00 MB speed:2621.44kb/s
+[2023-04-21 01:18:30][notice]Finished uploading localhost_wp_etecidos_wpvivid-64420e5135227_2023-04-21-01-17_backup_all.zip
+[2023-04-21 01:18:30][notice]Finish upload to googledrive

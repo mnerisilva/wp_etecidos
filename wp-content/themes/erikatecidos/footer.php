@@ -19,56 +19,54 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <div>
-              <img src="assets/img/logo/logo_transparente.png" alt=""></div>
-            <h3>Erika Tecidos</h3>
-            <p>
-              Rua Tiradentes, 8 - Campinas <br>
-              São José<br>
-              Santa Catarina <br><br>
-              <strong>Fone:</strong><span style="margin-left: 1em;"><i class="bi bi-whatsapp"></i> (48) 3241-0222</span><br>
-              <strong>E-mail:</strong> erikatecidos@erikatecidos.com.br<br>
-            </p>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Links Uteis </h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nossos Serviços</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nossas Redes Sociais</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
+              <?php 
+              // args
+              $args = array(
+                  'numberposts'   => 1,
+                  'post_type'     => 'rodape'
+              );
+              // query
+              $the_query = new WP_Query( $args );
+              ?>
+              <?php if( $the_query->have_posts() ): ?>
+                  <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                      <div class="col-lg-3 col-md-6 footer-contact">
+                        <?php the_field('bloco_1'); ?>
+                      </div>
 
-        </div>
-      </div>
-    </div>
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <?php the_field('bloco_2'); ?>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <?php the_field('bloco_3'); ?>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 footer-links">
+                        <?php the_field('bloco_4'); ?>
+                      </div>
+                  <?php endwhile; ?>
+              <?php endif; ?>
+              <?php wp_reset_query();   //$the_query->found_posts; Restore global post data stomped by the_post(). ?>
+
+
+
+
+
+
+
+
+
+
+
+        </div><!-- row -->
+
+      </div><!-- container -->
+
+    </div><!-- footer-top -->
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">

@@ -41,6 +41,7 @@ add_theme_support('post-thumbnails', array(
 	'equipe_cabecalho',
 	'equipe_dados',
 	'contato',
+	'rodape',
 ));
 
 add_theme_support('title-tag');
