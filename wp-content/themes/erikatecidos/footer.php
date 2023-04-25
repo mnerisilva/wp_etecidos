@@ -1,6 +1,5 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-newsletter">
       <div class="container">
         <!--<div class="row justify-content-center">
@@ -14,14 +13,9 @@
         </div>-->
       </div>
     </div>
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
-
-
-
               <?php 
               // args
               $args = array(
@@ -51,21 +45,8 @@
                   <?php endwhile; ?>
               <?php endif; ?>
               <?php wp_reset_query();   //$the_query->found_posts; Restore global post data stomped by the_post(). ?>
-
-
-
-
-
-
-
-
-
-
-
         </div><!-- row -->
-
       </div><!-- container -->
-
     </div><!-- footer-top -->
 
     <div class="container footer-bottom clearfix">

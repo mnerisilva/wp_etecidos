@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
+    position: relative;
 }
 
 .slogan {
@@ -31,4 +32,15 @@
 .aos-animate {
     /*transition: backgraound-color .2s;
     background-color:#37517e8f*/
+}
+
+.background-mask {
+    width: inherit;
+    height: inherit;
+    background-color: #a0b0c3c7;
+    position: absolute;
+}
+
+.cta {
+        background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url(../../assets/img/iStock-1352733860_costureira_background.jpg) fixed center center;
 }

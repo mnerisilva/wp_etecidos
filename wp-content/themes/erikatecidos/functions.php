@@ -42,6 +42,7 @@ add_theme_support('post-thumbnails', array(
 	'equipe_dados',
 	'contato',
 	'rodape',
+	'projeto_conteudo',
 ));
 
 add_theme_support('title-tag');
